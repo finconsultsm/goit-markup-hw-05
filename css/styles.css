@@ -604,17 +604,16 @@ font-size: 12px;
 line-height: 2;
 letter-spacing: 0.04em;
 color: #fff;
-
 }
 
 .subscibe-btn {
-    border-radius: 4px;
-    padding: 8px 24px;
-    width: 165px;
-    height: 40px;
-    background: #4d5ae5;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+border-radius: 4px;
+padding: 8px 24px;
+width: 165px;
+height: 40px;
+background: #4d5ae5;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
