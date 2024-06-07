@@ -801,20 +801,20 @@ margin-bottom: 16px;
 margin-bottom: 24px;
 }
 
-.modal-check-text span {
+.modal-check-icon {
 width: 16px;
 height: 16px;
-border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
-margin-right: 8px;
-display: flex;
+border-radius: 2px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: inline-flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
 }
 
-.modal-check:checked + .modal-check-text span {
-background-color: #4d5ae5;
+.modal-check:checked span {
+background-color: #404bbf;
 border: none;
 fill: #F4F4FD;
 }
@@ -832,26 +832,16 @@ margin-bottom: 24px;
 position: relative;
 }
 
-.modal-check-icon {
+.modal-check-text span {
 width: 16px;
 height: 16px;
-border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 2px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-display: inline-flex;
+border: 1px solid rgba(46, 47, 66, 0.4);
+margin-right: 8px;
+display: flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
-}
-
-.modal-check:checked  .modal-check-icon {
- background-color: #404bbf; 
- border: none; 
- fill: #F4F4FD;
-}
-
-.check-icon:checked {
-    
 }
 
 .modal-btn {
@@ -859,7 +849,7 @@ display: block;
 margin: 0 auto;
 border-radius: 4px;
 padding: 16px 32px;
-width: 169px;
+min-width: 169px;
 height: 56px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: #4d5ae5;
@@ -870,5 +860,7 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
