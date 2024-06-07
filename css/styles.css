@@ -481,7 +481,8 @@ border-top: none;
 /*------- Futter -----------*/
 .footer {
 background-color: #2e2f42;
-padding: 100px 0;
+padding-top: 100px;
+padding-bottom: 100px;
 }
 
 .container-core {
@@ -519,6 +520,7 @@ color: #f4f4fd;
 
 .container-footer-social {
 align-items: baseline;
+margin-right: 80px;
 }
 
 .social-text {
@@ -566,7 +568,62 @@ fill: #f4f4fd;
 background-color: #31d0aa
 }
 
+.container-futer-subscribe {
+}
+
+.subscribe-text {
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+margin-bottom: 16px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-form-wrap {
+}
+
+.footer-imput {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+   padding: 0 16px;
+background-color: transparent; 
+margin-right: 24px;
+}
+
+.footer-imput::placeholder {
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+color: #fff;
+
+}
+
+.subscibe-btn {
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background: #4d5ae5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+}
+
 /*------- -----------*/
+/*------- Backdrop -----------*/
 
 .backdrop {
 width: 100%;
@@ -574,11 +631,19 @@ height: 100%;
 background-color: rgba(46, 47, 66, 0.4);
 position: fixed;
 top: 0;
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
 /*
 display: flex;
 align-items: center;
 justify-content: center;*/
+}
 
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;  
 }
 
 .modal {
@@ -621,7 +686,7 @@ color: #2e2f42;
 margin-bottom: 16px;
 }
 
-.model-input {
+.modal-input {
 width: 100%;
 height: 40px;
 border: 1px solid rgba(46, 47, 66, 0.4);
@@ -631,15 +696,15 @@ outline: transparent;
 padding-left: 38px;
 }
 
-.model-input:focus {
+.modal-input:focus {
     border-color: #4d5ae5;
 }
 
-.model-input:focus + .modal-icon {
+.modal-input:focus + .modal-icon {
     fill: #4d5ae5;
 }
 
-.model-input::placeholder {
+.modal-input::placeholder {
 color: #2e2f4295;
 }
 
@@ -654,7 +719,7 @@ color: #8e8f99;
 padding-bottom: 4px;
 }
 
-.model-field {
+.modal-field {
 margin-bottom: 8px;
 }
 
@@ -672,6 +737,7 @@ transform: translateY(-50%);
 }
 
 .modal-coment {
+    
     width: 100%;
     height: 120px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -680,4 +746,97 @@ transform: translateY(-50%);
     outline: transparent;
     padding: 8px 18px;  
     resize: none;
+}
+
+.modal-coment-text {
+   font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99; 
+    margin-bottom: 4px;
+}
+
+.modal-check-text {
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+display: flex;
+align-items: center;
+margin-bottom: 24px;
+position: relative;
+}
+
+/* .modal-check-text::before {
+    content: "";
+    width: 40px;
+    height: 22px;
+    border-radius: 50px;
+    border: 1px solid #7577a0;
+    margin-right: 10px;
+}
+
+.modal-check-text::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color:  #7577a0;
+    margin-right: 10px;
+    transition-duration: 300ms; 
+}
+
+.modal-check:checked + .modal-check-text::after {
+    transform: translate(18px);
+    transition-duration: 300ms;
+    background-color: #ffffff;
+}
+
+.modal-check:checked + .modal-check-text::before {
+    transition-duration: 300ms;
+    background: #615252;
+} */
+
+.modal-check-text span {
+width: 16px;
+height: 16px;
+border-radius: 2px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+margin-right: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+}
+
+.modal-check:checked + .modal-check-text span {
+background-color: #4d5ae5;
+border: none;
+fill: #F4F4FD;
+}
+
+
+.madal-btn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+height: 56px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #4d5ae5;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
 }

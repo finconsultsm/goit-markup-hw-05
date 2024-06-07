@@ -367,6 +367,24 @@
               <use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
          </ul>
      </div>
+     <div class="container-futer-subscribe">
+      <p class="subscribe-text">Subscribe</p>
+    
+     
+         <form class="footer-form">
+         <div class="footer-form-wrap">
+            <label for="footer-email" aria-label="email"></label>
+            <input
+            type="email"
+            id="footer-email"
+            name="footer-email"
+            class="footer-imput"
+            placeholder="E-mail">
+         </div>
+          <button type="submit" class="subscibe-btn">Subscribe</button>
+      
+      </ul>
+     </div>
    </div>
     </footer>
     <div class="backdrop">
@@ -377,14 +395,14 @@
             <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use></svg></a>
        </button>
        <p class="modal-title">Leave your contacts and we will call you back</p>
-       <form class="model-form">
-      <div class="model-field">
+       <form class="modal-form">
+      <div class="modal-field">
           <label for="user-name" class="modal-text">Name</label> 
          <div class="modal-field-wrap">
              <input 
              type="text" 
              name="user-name" 
-             class="model-input" 
+             class="modal-input" 
              placeholder="Enter name" 
              id="user-name"
              /> 
@@ -393,13 +411,13 @@
             </svg>
          </div>
       </div>
-     <div class="model-field">
+     <div class="modal-field">
       <label for="user-tel" class="modal-text">Phone</label> 
          <div class="modal-field-wrap">
              <input 
            type="tel" 
            name="user-tel" 
-           class="model-input" 
+           class="modal-input" 
            placeholder="Entrer telefon" 
            id="user-tel"/>
            <svg class="modal-icon" widht="18" height="18">
@@ -407,13 +425,13 @@
           </svg>
          </div>
      </div>
-       <div class="model-field">
+       <div class="modal-field">
         <label for="user-email" class="modal-text">Email</label> 
         <div class="modal-field-wrap">
            <input 
            type="email" 
            name="user-email" 
-           class="model-input" 
+           class="modal-input" 
            placeholder="Enter email" 
            required 
            id="user-email"/>
@@ -422,16 +440,33 @@
           </svg>
         </div>
        </div>
-      <diw class="model-field">
-         <label for="user-coment">Comment</label>
+      <div class="modal-field">
+         <label for="user-coment" class="modal-coment-text">Comment</label>
          <textarea
          name="user-coment"
          placeholder="Text input"
          id="user-coment"
          class="modal-coment">
          </textarea>
-      </diw>
-       <button type="submit">Send</button>
+      </div>
+      <div class="modal-field">
+      <input 
+      type="checkbox" 
+      name="policy" 
+      id="policy" 
+      value="true" 
+      class="modal-check visually-hidden">
+      <label for="policy" class="modal-check-text"
+      >
+      <span>
+       <svg class="check-icon" width="10" height="8">
+        <use href="./images/icons.svg#icon-check"></use>
+       </svg>
+      </span>
+      I accept the terms and conditions of the Privacy Policy</label>
+      </div>
+
+       <button type="submit" class="madal-btn">Send</button>
        </form>
       </div>
     </div>
