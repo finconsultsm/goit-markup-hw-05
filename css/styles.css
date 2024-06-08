@@ -639,7 +639,6 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
-margin-right: auto;
 }
 
 .btn-icon-svg {
@@ -649,7 +648,6 @@ margin-right: auto;
 .btn-icon {
     fill: white;
     position: absolute;
-    right: 24px;
 }
 
 /*------- -----------*/
