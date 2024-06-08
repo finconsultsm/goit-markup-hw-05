@@ -631,6 +631,17 @@ background-color: #4D5AE5;
 border: none;
 }
 
+
+.submit-btn-text {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+margin-right: auto;
+}
+
 .btn-icon-svg {
     position: relative;
 }
@@ -638,7 +649,7 @@ border: none;
 .btn-icon {
     fill: white;
     position: absolute;
-    margin-left: 16px;
+    right: 24px;
 }
 
 /*------- -----------*/
