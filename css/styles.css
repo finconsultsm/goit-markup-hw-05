@@ -648,6 +648,7 @@ color: #fff;
 .btn-icon {
     fill: white;
     position: absolute;
+    margin-left: 16px;
 }
 
 /*------- -----------*/
