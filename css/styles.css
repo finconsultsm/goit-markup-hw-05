@@ -292,10 +292,11 @@ color: #434455;
 .team {
 background: #f4f4fd;
 padding-top: 120px;
+padding-bottom: 120px;
 }
 
 .container-team {
-    padding: 32px 0;
+    
 }
 
 .team-title {
@@ -314,7 +315,6 @@ display: flex;
 flex-wrap: wrap;
 gap: 24px;
 align-items: center;
-margin: 0 auto;
 }
 
 .team-item {
@@ -322,9 +322,13 @@ background-color: #FFFFFF;
 border-radius: 0px 0px 4px 4px;
 text-align: center;
 width: calc((100% - 72px) / 4);
-margin-bottom: 120px;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 background: #fff;
+}
+
+.team-img {
+    width: 100%;
+    height: auto;
 }
 
 .team-block {
@@ -813,15 +817,8 @@ margin-bottom: 24px;
 }
 
 .modal-check-icon {
-width: 16px;
-height: 16px;
-border: 1px solid rgba(46, 47, 66, 0.4);
-border-radius: 2px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 display: inline-flex;
-align-items: center;
-justify-content: center;
-fill: transparent;
 }
 
 .modal-check:checked + .modal-check-text > .modal-check-icon {
@@ -837,7 +834,6 @@ font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
-align-items: center;
 margin-bottom: 24px;
 position: relative;
 }
