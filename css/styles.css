@@ -637,14 +637,14 @@ text-align: center;
 color: #fff;
 }
 
-/* .btn-icon-svg {
-    position: relative;
-} */
 
 .btn-icon {
     fill: white;
-    position: absolute;
     margin-left: 16px;
+}
+
+.btn-icon:hover, .btn-icon:focus {
+
 }
 
 /*------- -----------*/
@@ -808,6 +808,10 @@ margin-bottom: 16px;
 margin-bottom: 24px;
 }
 
+.modal-check {
+    display: block;
+}
+
 .modal-check-icon {
 width: 16px;
 height: 16px;
@@ -849,7 +853,7 @@ height: 16px;
 border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 margin-right: 8px;
-display: flex;
+display: inline;
 align-items: center;
 justify-content: center;
 fill: transparent;
@@ -881,3 +885,4 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: #404bbf;
 }
 
+.
